@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Collapse border table</title>
+        <style>
+            .container{
+                margin-left: 350px;
+            }
+          th{
+              width: 70px;
+              height: 22px;
+              padding: 5px 5px;
+          }
+          th:nth-child(n+1){
+              background-color: green;
+          }
+          td{
+              padding: 5px 5px;
+              }
+          tr:nth-child(even) td:nth-child(1){
+              background-color: goldenrod;
+          }
+          tr:nth-child(odd) td:nth-child(1){
+              background-color: silver;
+          }
+          tr:nth-child(even) td:nth-child(2){
+              background-color: silver;
+          }
+          tr:nth-child(odd) td:nth-child(2){
+              background-color: goldenrod;
+          }
+          tr:nth-child(even) td:nth-child(3){
+              background-color: goldenrod;
+          }
+          tr:nth-child(odd) td:nth-child(3){
+              background-color: silver;
+          }
+          tr:nth-child(even) td:nth-child(4){
+              background-color: silver;
+          }
+          tr:nth-child(odd) td:nth-child(4){
+              background-color: goldenrod;
+          }
+          tr:nth-child(odd) td:nth-child(5){
+              background-color: goldenrod;
+          }
+          tr:nth-child(even) td:nth-child(5){
+              background-color: silver;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <table>
+            <h1>Table one</h1>
+            <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>age</th>
+                    <th>Nationality</th> 
+            </tr>
+            <tr>
+                    <td>Scote</td>
+                    <td>Gomez</td>
+                    <td>Player</td>
+                    <td>30</td>
+                    <td>French</td>
+            </tr>
+            <tr>
+                    <td>Paul</td>
+                    <td>Mackie</td>
+                    <td>Coach</td>
+                    <td>45</td>
+                    <td>American</td>
+            </tr>
+            <tr>
+                    <td>Leoni</td>
+                    <td>Cabrera</td>
+                    <td>Assistant</td>
+                    <td>43</td>
+                    <td>Canadian</td>
+            </tr>
+            <tr>
+                    <td>Gregor</td>
+                    <td>Byrne</td>
+                    <td>Player</td>
+                    <td>35</td>
+                    <td>Ethiopian</td>
+            </tr>
+            <tr>
+                    <td>Francis</td>
+                    <td>Shaffer</td>
+                    <td>Manager</td>
+                    <td>23</td>
+                    <td>Kenyan</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
