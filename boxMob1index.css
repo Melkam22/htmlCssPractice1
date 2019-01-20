@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    width: 0;
+}
+i{
+    text-align: center;
+    padding: 4px 4px;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+h4{
+    text-align: center;
+    font-size: 14px;
+}
+.container{
+    width: 1000px;
+    height: 870px;
+    border: 2px solid silver;
+    margin-left: 150px;
+}
+
+.container1{
+    width: 92%;
+    height: 70px;
+    border: 1px solid orange;
+    margin: 20px 40px;
+}
+.container1 icon1{
+    width: 40px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 5px;
+    position:  absolute;
+}
+.container1 icon2{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 55px;
+    position:  absolute;
+}
+.container1 icon3{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 107px;
+    position:  absolute;
+}
+.container1 icon4{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 160px;
+    position:  absolute;
+}
+.container1 icon5{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 212px;
+    position:  absolute;
+}
+.container1 icon6{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 264px;
+    position:  absolute;
+}
+.container1 icon7{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 314px;
+    position:  absolute;
+}
+                            /*the icon part, the break in b/n*/
+
+.container1 icon8{
+    width: 45px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 550px;
+    position:  absolute;
+}
+
+.container1 icon9{
+    width: 79px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 600px;
+    position:  absolute;
+}
+.container1 icon10{
+    width: 45px;
+    height: 60px;
+     
+    margin: 5px 685px;
+    position:  absolute;
+    border-radius: 40%;
+}
+.container1 icon11{
+    width: 53px;
+    height: 60px;
+    border: 1px solid blue;
+    margin: 5px 745px;
+    position:  absolute;
+}
+.container1 icon12{
+    width: 50px;
+    height: 60px;
+    
+    margin: 5px 810px;
+    position:  absolute;
+}
+
+.container1 icon13{
+    width: 45px;
+    height: 60px;
+     
+    margin: 5px 870px;
+    position:  absolute;
+}
+                        /*container1 icons decoration*/
+
+.container1 icon1,icon2,icon3,icon4,icon5,icon6,icon7{
+    background-color: rgba(120,170,210,.6);
+}   
+.container1 icon1:hover,icon2:hover,icon3:hover,icon4:hover,
+ icon5:hover,icon6:hover,icon7:hover{
+    background-color: rgba(20,70,10,.6);
+} 
+.container1 icon8,icon9,icon11{
+    background-color: rgba(120,170,210,.6);
+}  
+.container1 icon8:hover,icon9:hover,icon11:hover{
+    background-color: rgba(20,70,10,.6); 
+}      
+
+                        /*1st container 3 icons decoration*/
+
+.container1 icon10:hover,.container1 icon12:hover,.container1 icon13:hover{
+    transform: scale(1.1);
+    color: olivedrab;
+}                        
+
+                         /*the second container*/
+
+.container2{
+    width: 850px;
+    height: 100px;
+    border: 1px solid blue;
+    margin: 150px 80px;     
+}
+
+.container2 box1{
+    width: 120px;
+    height: 70px;
+    
+    margin: 15px 150px;
+    position:  absolute;
+    }
+
+ .container2 box2{
+        width: 170px;
+        height: 70px;
+         
+        margin: 15px 220px;
+        position:  absolute;
+        } 
+.container2 h2{
+    font-size: 34px;
+    color: green;
+    font-weight: bold;
+}
+                        /*container2 search bar part*/
+
+.container2 box3{
+     
+    margin: 40px 440px;
+    position: absolute;
+}
+#searchbar{
+    width: 330px;
+    height: 40px;
+    border-radius: 42%;
+}
+
+.container2 i{
+    color: green;
+    margin: 20px;
+}
+/*
+ .container2 box3{
+            width: 330px;
+            height: 70px;
+            border: 1px solid blue;
+            margin: 15px 440px;
+            position:  absolute;
+             
+            }
+*/
+
+ 
+
+                                /*the third container*/
+.container3{
+    width: 950px;
+    height: 80px;
+    border: 1px solid blue;
+    margin: 5px 25px;
+}
+.container3 box1{
+    width: 50px;
+    height: 70px;
+    border: 1px solid blue;
+    margin: 5px 25px;
+    position: absolute;
+}
+.container3 box2{
+    width: 50px;
+    height: 70px;
+    border: 1px solid blue;
+    margin: 5px 578px;
+    position: absolute;
+}
+.container3 box3{
+    width: 50px;
+    height: 70px;
+    border: 1px solid blue;
+    margin: 5px 635px;
+    position: absolute;
+}
+.container3 box4{
+    width: 115px;
+    height: 70px;
+    border: 1px solid blue;
+    margin: 5px 700px;
+    position: absolute;
+}
+
+                            /*container 3 boxes decoration*/
+                            
+.container3 box1,.container3 box2,.container3 box3,
+.container3 box4{
+    background-color: rgba(53,44,31,.6);
+}
+
+.container3 box1:hover,.container3 box2:hover,.container3 box3:hover,
+.container3 box4:hover{
+    background-color: rgba(103,104,291,.6);
+}
+
+
+                                /*the last container*/
+
+.container4{
+    width: 950px;
+    height: 130px;
+    border: 1px solid blue;
+    margin: 50px 25px;
+}
+
+.container4 box1{
+    width: 50px;
+    height: 55px;
+    border: 1px solid blue;
+    margin: 40px 20px;
+    position: absolute;
+}
+.container4 box2{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 85px;
+    position: absolute;
+}
+.container4 box3{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 208px;
+    position: absolute;
+}
+.container4 box4{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 337px;
+    position: absolute;
+}
+.container4 box5{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 459px;
+    position: absolute;
+}
+.container4 box6{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 582px;
+    position: absolute;
+}
+.container4 box7{
+    width: 115px;
+    height: 120px;
+    border: 1px solid blue;
+    margin: 5px 705px;
+    position: absolute;
+}
+.container4 box8{
+    width: 50px;
+    height: 55px;
+    border: 1px solid blue;
+    margin: 40px 835px;
+    position: absolute;
+}
+                         /*last container boxes decoration*/
+
+.container4 box1,box8{
+        background-color: rgba(53,44,31,.6);
+    }                   
+
+    .container4 box1:hover,.container4 box8:hover{
+        background-color: rgba(119,194,138,.6);
+    }                   
+
+                         /*last container photos decoration*/
+
+    .container4 box2:hover,.container4 box3:hover,.container4 box4:hover,
+    .container4 box5:hover,.container4 box6:hover,.container4 box7:hover{
+        transform: scale(1.1);
+    }                                           
+
+    main a{
+        margin-left: 860px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
