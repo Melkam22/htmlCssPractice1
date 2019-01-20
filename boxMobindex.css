@@ -104,7 +104,7 @@ h4{
 }
 
 .container2 box8{
-    width: 350px;
+    width: 330px;
     height: 70px;
     border: 1px solid blue;
     position: absolute;
@@ -113,27 +113,48 @@ h4{
     background-color: chocolate;
     border-radius: 35%;
 }
+                                        /*the search engine part*/
 
-.container2 box9{
-    width: 300px;
+main{
+    width: 390px;
     height: 50px;
     border: 1px solid blue;
     position: absolute;
     margin: 170px 50px;
     text-align: center;
     background-color: white;
-}
-
-.container2 box10{
-    width: 80px;
-    height: 50px;
-    border: 1px solid blue;
-    position: absolute;
-    margin: 170px 370px;
-    text-align: center;
-    background-color: white;
     border-radius: 42%;
 }
+
+main i{
+    text-align: center;
+    margin: 15px;
+}
+
+#search-bar{
+    width: 340px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    margin: 0px -195px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+}
+
+main box10{
+    width: 50px;
+    height: 52px;
+    border: 1px solid blue;
+    position: absolute;
+    margin: 0px 144px;
+    text-align: center;
+    background-color: blue;
+    position: absolute;
+}
+
+
+
 .container3{
     width: 750px;
     height: 200px;
