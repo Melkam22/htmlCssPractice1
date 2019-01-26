@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>google Desktop</title>
+        <link href=
+        "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+
+        <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            width: 100vw;
+            min-height: 100vh;
+        }
+                                        /*heading buttons*/
+
+        .container1{
+            width: 100vw;
+            height: 8vh;
+            
+            display: flex;
+        }
+
+        span1{
+            width: 12vw;
+            height: 5vh;
+            
+            position: absolute;
+            margin: 3px 2px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+                                        /*heading hover effect*/
+
+        span1:hover,span2:hover,span3:hover,span4:hover{
+            color: blue;
+        }
+        span5:hover{
+            color: darkgray;
+        }
+
+        span2{
+            width: 6vw;
+            height: 5vh;
+        
+            position: absolute;
+            margin: 3px 100px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+    
+        span3{
+            width: 6vw;
+            height: 5vh;
+            
+            position: absolute;
+            margin: 3px 870px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        span4{
+            width: 6vw;
+            height: 5vh;
+            
+            position: absolute;
+            margin: 3px 940px;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        span5{
+            width: 5.5vw;
+            height: 5vh;
+            
+            position: absolute;
+            margin: 3px 1020px;
+            padding-top: 10px;
+        }
+        span6{
+            width: 8vw;
+            height: 3vh;
+        
+            position: absolute;
+            margin: 12px 1100px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            padding-top: 8px;
+        }
+         
+
+                        /*the main container with google logo and search bars*/
+        .container2{
+            width: 45vw;
+            height: 30vh;
+        
+            margin: 160px 320px;
+        }
+        .container2 box1{
+            width: 23vw;
+            height: 10vh;
+    
+            position: absolute;
+            margin: -20px 135px;
+        }
+        #searchbar{
+            width: 43vw;
+            height: 5vh;
+            border: 1px solid black;
+            position: absolute;
+            margin: 92px 10px;
+        }
+
+        .container2 box3{
+            width: 10vw;
+            height: 4vh;
+        
+            position: absolute;
+            margin: 137px 140px;
+            text-align: center;
+            background-color: lightgray;
+            padding-top: 10px;
+        }
+        .container2 box3:hover, .container2 box4:hover{
+            background-color: darkgray;
+        } 
+    
+        .container2 box4{
+            width: 10vw;
+            height: 4vh;
+        
+            position: absolute;
+            margin: 137px 300px;
+            text-align: center;
+            background-color: lightgray;
+            padding-top: 10px;
+        }
+                    /*the footer part with two containers and many boxes inside*/
+
+        .footer{
+            width: 100vw;
+            height: 12vh;
+            
+            background-color: lightgray;
+        }
+        .container3{
+            width: 100vw;
+            height: 6vh;
+            border-bottom: 1px solid black;  
+        }
+
+        .container3 box1{
+            width: 10vw;
+            height: 2vh;
+        
+            position: absolute;
+            margin: 5px 30px;
+            padding-top: 15px;
+        }
+
+        .container4{
+            width: 100vw;
+            height: 6vh;
+            display: flex;
+        }
+
+        .container4 box1{
+            width: 10vw;
+            height: 3vh;
+            
+            position: absolute;
+            margin: 5px 30px;
+            padding-top: 10px;
+        }
+
+        .container4 box2{
+            width: 8vw;
+            height: 3vh;
+        
+            position: absolute;
+            margin: 5px 170px;
+            padding-top: 10px;  
+        }
+
+        .container4 box3{
+            width: 5vw;
+            height: 3vh;
+            
+            position: absolute;
+            margin: 5px 970px;
+            padding-top: 10px;
+        }
+
+        .container4 box4{
+            width: 5vw;
+            height: 3vh;
+            
+            position: absolute;
+            margin: 5px 1040px;
+            padding-top: 10px;
+        }
+
+        .container4 box5{
+            width: 5vw;
+            height: 3vh;
+            
+            position: absolute;
+            margin: 5px 1110px;
+            padding-top: 10px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+                                 <!--heading buttons-->
+            <div class="container1">
+                <span1>About</span1>
+                <span2>Store</span2>
+                <span3>Gmail</span3>
+                <span4>Images</span4>
+                <span5><i class="fa fa-th fa-2x" aria-hidden="true"></i></span5>
+                <span6>Sign in</span6>
+            </div>
+                                <!--google logo with search bars-->
+
+        <div class="container2">
+            <box1><img src="google.png"></box1>
+            <box2><input type="text" id="searchbar" placeholder="google search"> </box2>
+            <box3>google search</box3>
+            <box4>I'm feeling Lucky</box4>
+        </div>
+                                <!--the bottom of the page, two boxes-->
+        <div class="footer">
+            <div class="container3">
+                <box1>Germany</box1>
+            </div>
+    
+        <div class="container4">
+            <box1>Advertising</box1>
+            <box2>Business</box2>
+            <box3>Privacy</box3>
+            <box4>Terms</box4>
+            <box5>Settings</box5>
+
+            </div>
+        
+        </div>
+        
+        </div>
+        
+    </body>
+</html>
