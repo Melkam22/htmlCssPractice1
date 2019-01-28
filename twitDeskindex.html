@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twitter Desktop Login page</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(twitterImg.png);
+            background-position: center;
+        }
+
+        .left {
+            width: 100vw;
+            height: 93vh;
+            background-color: rgba(10, 179, 255,.7);
+        }
+
+        .right {
+            width: 50vw;
+            height: 93vh;
+            
+            position: absolute;
+            margin: -622px 650px;
+            background-color: white;
+        }
+
+        .container1 {
+            width: 32vw;
+            height: 27vh;
+
+            position: absolute;
+            margin: 200px 100px;
+        }
+
+        /*container and boxes inside the left side*/
+
+        .container1 box1 {
+            width: 3vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 30px 30px;
+        }
+
+        .container1 box2 {
+            width: 24vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 30px 80px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .container1>box1 i,box3 i,box5 i{
+            color: white;
+        }
+
+        .container1 box3 {
+            width: 3vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 90px 30px;
+        }
+
+        .container1 box4 {
+            width: 24vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 90px 80px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .container1 box5 {
+            width: 3vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 140px 30px;
+        }
+
+        .container1 box6 {
+            width: 24vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 140px 80px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .right .container2 {
+            width: 35vw;
+            height: 39vh;
+
+            position: absolute;
+            margin: 160px 80px;
+        }
+
+        /*container and all icons inside the white background right part*/
+
+        .container2 icon1 {
+            width: 4vw;
+            height: 6vh;
+
+            position: absolute;
+            margin: 5px 10px;
+        }
+
+        .container2>icon1 i {
+            color: skyblue;
+        }
+
+        .container2 icon2 {
+            width: 5vw;
+            height: 5vh;
+            border: 1px solid blue;
+            position: absolute;
+            margin: 5px 380px;
+            border-radius: 43%;
+            text-align: center;
+            padding-top: 10px;
+            color: skyblue;
+            font-weight: bold;
+        }
+
+        .container2 icon2:hover {
+            background-color: rgba(13,179,255,.1);
+        }
+
+        .container2 icon3 {
+            width: 33vw;
+            height: 6vh;
+
+            position: absolute;
+            margin: 60px 10px;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .container2 icon4 {
+            width: 35vw;
+            height: 5vh;
+
+            position: absolute;
+            margin: 175px 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+
+        .container2 icon5 {
+            width: 33vw;
+            height: 4vh;
+            border: 1px solid blue;
+            position: absolute;
+            margin: 205px 10px;
+            border-radius: 100px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: skyblue;
+            padding-top: 10px;
+        }
+
+        .container2 icon5:hover {
+            background-color: blue;
+        }
+
+        .container2 icon6 {
+            width: 33vw;
+            height: 4vh;
+            border: 1px solid blue;
+            position: absolute;
+            margin: 252px 10px;
+            border-radius: 100px;
+            text-align: center;
+            font-weight: bold;
+            color: skyblue;
+            padding-top: 10px;
+        }
+
+        .container2 icon6:hover {
+            background-color: rgba(13, 179, 255, .1);
+        }
+
+        .bottom{
+            width: 100vw;
+            height: 7vh;
+            border-top: 1px solid black;
+            display: flex;
+            background-color: white;
+        }
+
+        /*the elements inside the bottom part with flex effect*/
+
+        .bottom box1,box2,box3,box4,box5,box6,box7,box8,box9,box10,box11,box12,
+        box13,box14 box15,box16,box17,box18,box19{
+            width: 5.5vw;
+            height: 4vh;
+            padding-top: 10px;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <div class="container1">
+                <box1><i class="fa fa-search fa-2x" aria-hidden="true"></i></box1>
+                <box2>Follow your interests.</box2>
+                <box3><i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                </box3>
+                <box4>Hear what people are talking about.</box4>
+                <box5><i class="fa fa-comment-o fa-2x" aria-hidden="true"></i>
+                </box5>
+                <box6>Join the conversation.</box6>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="container2">
+
+                <icon1><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </icon1>
+                <icon2 class="login">Log in</icon2>
+
+
+                <icon3>See what's happening in <br> the world right now.</icon3>
+                <icon4>Join Twitter today.</icon4>
+                <icon5>Sign up</icon5>
+                <icon6>Log in</icon6>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <box1>About</box1>
+            <box2>help center</box2>
+            <box3>Blog</box3>
+            <box4>Status</box4>
+            <box5>Job</box5>
+            <box6>Terms</box6>
+            <box7>Privacy Po</box7>
+            <box8>Imprint</box8>
+            <box9>Cookies</box9>
+            <box10>Ads info</box10>
+            <box11>Brand</box11>
+            <box12>Apps</box12>
+            <box13>Advertise</box13>
+            <box14>Marketing</box14>
+            <box15>Businesses </box15>
+            <box16>Developers </box16>
+            <box17>Directory</box17>
+            <box18>Settings</box18>
+            <box19> <i class="fa fa-at" aria-hidden="true"></i>
+                 2019 Twitter</box19>
+        </div>
+    </main>
+</body>
+
+</html>
