@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Z-index css effects</title>
+        <style>
+            h1{
+                color: blue;
+            }
+            p{
+                color: green;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;  
+                border: 5px orange dotted;
+            }
+            .img2{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -3;   
+                border: 5px green dashed;
+            }
+            .img3{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: -4;  
+                border: 5px silver double; 
+            }
+
+                                     /*inline block*/
+                                    
+        section{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 250px 200px;
+            
+        }
+
+        section>h1{
+            text-align: center;
+        }
+
+        section>span{
+            width: 90px;
+            height: 125px;
+            border: 1px solid black;
+            margin: 0 15px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Z-index</h1>
+        <img src="beauty-nature.jpg" alt="nature" width="300" height="300">
+        <p>The z-index property specifies the stack order of an element.
+            An element with greater stack order is always in front of an element
+            with a lower stack order.
+        </p>
+        <img class="img2" src="photo4.jpg" alt="nature" width="350" height="350">
+        <img class="img3" src="tricmountain.jpg" alt="nature" width="400" height="400">
+
+        <br>
+
+                                        <!--inline block-->
+
+                                       
+        <section>
+                <h1>inline block</h1>
+            <span>one</span>
+            <span>two</span>
+            <span>Three Lorem ipsum,amet consectetur 
+                adipisicing elit. Porro, enim.</span>
+        </section>
+    </body>
+
+</html>
