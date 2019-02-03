@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>class activity table</title>
+<style>
+    .container{
+        margin-left: 150px;
+    }
+
+    th,td{
+        padding: 5px 5px;
+    }
+
+    table th{
+        background-color: darkgrey;
+    }
+
+    tr:nth-child(even){
+        background-color: green;
+    }
+    tr:nth-child(3) td:nth-child(2){
+        background: orange;
+    }
+    /*
+    tr:nth-child(3) td:nth-child(1){
+        background-color: orange;
+    }
+    tr:nth-child(4) td:nth-child(2){
+        background-color: orange;
+    }
+    tr:nth-child(5) td:nth-child(3){
+        background-color: orange;
+    }
+        td:not(.except){
+        background-color: tomato;
+        
+    }
+    */
+
+    table tr th:not(:nth-child(2n+1)){
+        background-color: silver;
+    }
+
+                    /*search bar with different character*/
+
+    .box{
+        width: 420px;
+        height: 250px;
+        border: 1px solid blue;
+        position: absolute;
+        margin: 40px 350px;
+        background-image: linear-gradient(green,blue,red,silver,white);
+        
+    }
+    input{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        box-sizing: border-box;
+        transition: .5s;
+    }
+    input[type="text"]{
+        background: lightgrey;
+        border: none;
+        width: 300px;
+        height: 40px;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 0 0 25px;
+    }
+    input[type="submit"]{
+        position: relative;
+        border-radius: 0 25px 25px 0;
+        width: 100px;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: green;
+        color: orange;
+    }
+</style>
+
+
+    </head>
+</html>
+
+
+
+<body>
+        <div class="container">
+        <table>
+            <h1>Table one</h1>
+            <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>age</th>
+                    
+            </tr>
+            <tr>
+                    <td>Scote</td>
+                    <td>Gomez</td>
+                    <td>Player</td>
+                    <td>30</td>
+                    
+            </tr>
+            <tr>
+                    <td>Paul</td>
+                    <td>Mackie</td>
+                    <td>Coach</td>
+                    <td>45</td>
+                    
+            </tr>
+            <tr>
+                    <td>Leoni</td>
+                    <td>Cabrera</td>
+                    <td>Assistant</td>
+                    <td>43</td>
+                    
+            </tr>
+            <tr>
+                    <td>Gregor</td>
+                    <td>Byrne</td>
+                    <td>Player</td>
+                    <td>35</td>
+                    
+            </tr>
+            <tr>
+                    <td class="except">Francis</td>
+                    <td>Shaffer</td>
+                    <td>Manager</td>
+                    <td>23</td>
+                    
+            </tr>
+        </table>
+        </div>
+        <hr>
+        <hr>
+
+        <!--search bar with special character-->
+    
+    <div class="box">
+        <h1>Search...</h1>
+        <form>
+            <input type="text" name="" placeholder="search...">
+            <input type="submit" name="" value="search">
+        </form>
+    </div>
+    </body>
+</html>
