@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Border exercises</title>
+        <style>
+                /*Css borders*/
+
+        .one{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 1px solid black;
+            margin-left: 100px;
+        }
+        .two{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 1px dashed black;
+            margin-left: 100px;
+        }
+        .three{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 1px dotted black;
+            margin-left: 100px;
+        }
+        .four{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border-style: double;
+            margin-left: 100px;
+        }
+        /*tick style didnt work*/
+        .five{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 4px solid black; 
+            margin-left: 100px; 
+        }
+        .six{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 4px dashed black; 
+            margin-left: 100px; 
+        }
+        .seven{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 4px dotted black;
+            margin-left: 100px;  
+        }
+        .eight{
+            font-size: 15px;
+            width: 40vw;
+            padding: 10px 10px;
+            text-align: center;
+            border: 5px double black; 
+            margin-left: 100px; 
+        }
+
+        /*table*/
+        table{
+            margin-left: 100px;
+        }
+        table td{
+            border: 1px solid black;
+            padding: 4px 4px;
+        }
+        table th{
+            background: green;
+            padding: 4px 4px;
+        }
+
+                                    /*tables exercises*/
+                                
+        .container{
+            width: 600px;
+            height: 300px;
+            border: 1px solid black;
+            margin-left: 200px;
+        }
+        .container table td{
+            border: 1px solid blue;
+            padding: 4px 4px;
+        }
+        .container table th{
+            background: green;
+            padding: 5px 5px;
+        }
+
+                                /*second table exercise*/
+
+        .container1{
+            width: 600px;
+            height: 250px;
+            border: 1px solid black;
+            margin-left: 200px;
+        }                        
+
+        .container1 table td{
+            border: 1px solid blue;
+            padding: 4px 4px;
+        }
+        .container1 table th{
+            background: green;
+            padding: 5px 5px;
+        }
+        
+        </style>
+    </head>
+
+    <body>
+
+                    <!--css borders-->
+<hr>
+        <h2>1. Css borders</h2>
+
+        <h1 class="one">box with thin solid border</h1>
+        <h1 class="two">box with thin dashed border</h1>
+        <h1 class="three">box with thin doted border</h1>
+        <h1 class="four">box with thin double border</h1>
+        <h1 class="five">box with thick solid border</h1>
+        <h1 class="six">box with thick dashed border </h1>
+        <h1 class="seven">box with thick doted border</h1>
+        <h1 class="eight">box with thick double</h1>
+
+        <hr>
+
+        <!--create table-->
+        <h2>2. Create Table</h2>
+
+        <table>
+            <tr>
+                <th>Logo</th>
+                <th>Company</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
+            <tr>
+                <td>logo</td>
+                <td>KNIME.com AG</td>
+                <td>0800 200 55 88</td>
+                <td>http://www.knime.com</td>
+            </tr>
+            <tr>
+                <td>logo</td>
+                <td>contentbird GmBH</td>
+                <td>0800 100 38 44</td>
+                <td>http://www.contentbird.io/</td>
+            </tr>
+        </table>
+
+                        <!--table one exercise-->
+                       <h2>Table Exercises </h2> 
+        <div class="container">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Stwart</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>Paul</td>
+                    <td>Breitner</td>
+                    <td colspan="3">31</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Name not given</td>
+                    
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>Susan</td>
+                    <td>Hildebrandt</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Peter</td>
+                    
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Fred</td>
+                    <td>Flintstone</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </div>
+
+                                    <!--second table exercise-->
+
+        <h2>Tables exercises</h2>
+
+        <div class="container1">
+            <table>
+                <tr>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                        <th>Age</th>
+                 </tr>
+                <tr>
+                        <td>Mary</td>
+                        <td>Stwart</td>
+                        <td>34</td>
+                </tr>
+                <tr>
+                        <td>Paul</td>
+                        <td>Breitner</td>
+                        <td>73</td>
+                </tr>
+                <tr>
+                        <td>Mario</td>
+                        <td>Gomez</td>
+                        <td>36</td>
+                </tr>
+            </table
+        </div>
+
+    </body>
+</html>
