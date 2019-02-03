@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Exercise2</title>
+        <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 90vh;
+            border: 2px solid blue;
+            display: flex;
+        }
+
+        h1{
+            color: white;
+            background: black;
+        }
+                                            /*position absolute part*/
+
+        .left{
+            width: 40vw;
+            height: 70wh;
+            top: 6vh;
+        }
+        .one{
+            background-size: cover;
+        }
+        .two{
+            position: absolute;
+            top: 25vh;
+            left: 20vw;
+            
+        }
+                                    /*the position relative part*/
+        .right{
+            width: 65vw;
+            height: 90vh;
+            
+            margin: 0 6vw;
+            }
+
+        .right box{
+            width: 12vw;
+            height: 13vh;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 40px 20px;
+            background-image: linear-gradient(orange, green,black,silver,blue);
+        }
+
+        .right .deux{
+            position: relative;
+            top: 4vh;
+            background-image: url(nature.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+         
+
+        .right .cinq{
+            position: relative;
+            bottom: 4vh;
+            background-image: url(bird.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+         
+
+         
+        
+        </style>
+    </head>
+    <body>
+
+            <h1>Unique Positioning</h1>
+
+        <div class="container">
+                 
+            <div class="left">
+                    <h2>Absolute Position</h2>
+                    <img class="one" src="beauty-nature.jpg" width="450" height="520">
+                    <img class="two" src="nature.jpg" width="170" height="170">
+            </div>
+
+             
+            <div class="right">
+                    <h2>Relative Position</h2>
+                <box class="un"></box>
+                <box class="deux"></box>
+                <box class="trois"></box>
+                <box class="quatre"></box>
+                <box class="cinq"></box>
+                <box class="six"></box>
+            </div>
+        </div>
+    </body>
+</html>
