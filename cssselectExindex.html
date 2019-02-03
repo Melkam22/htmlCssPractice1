@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Selector Exercises</title>
+        <style>
+                                        /*1 combinator selector*/
+
+            table{
+                margin: 100px 150px;
+            }
+            table th{
+                background: black;
+                color: white;
+                padding: 5px 5px;
+                font-weight: bold;
+            }
+
+            table td{
+                border: 1px solid black;
+                padding: 4px 4px;
+            }
+            tr:nth-child(3){
+                color: red;
+            }
+
+            table tr:nth-child(6){
+                color: blue;
+            } 
+            
+            table tr:nth-child(7){
+                color: blue;
+            }
+
+                                          /*2 Attribute Selectors*/
+
+        .box{
+            width: 400px;
+            height: 350px;
+            border: 1px solid blue;
+        }
+
+        input[type="checkbox"]{
+            font-size: 19px;
+            font-weight: bold;
+            margin: 15px 30px;
+        }
+        
+        .box #ashu{
+            color: blue;
+        }
+
+        .box #red{
+            color: red;
+        }
+
+        input[type="radio"]{
+            font-size: 19px;
+            font-weight: bold;
+            margin: 15px 30px;
+        }
+
+        input[type="text"]{
+            width: 100px;
+            margin: 15px 30px;
+        }
+
+                                    /*3 Attribute selectors*/
+
+        div{
+            width: 700px;
+            height: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        a{
+            padding: 10px 10px;
+            position: absolute;
+            margin-top: 15px;
+            border: 1px solid blue;
+            font-weight: bolder;
+        }
+
+        .xx{
+            margin-top: 50px;
+            background: yellow;
+        }
+        a[target]{
+            border: 1px solid black;
+            margin-top: 75px;
+            font-weight: bold;
+            background: yellow;
+        }
+
+        a[target="_blank"]{
+            border: 1px solid black;
+            margin-top: 100px;
+            font-weight: bold;
+            background: rgb(158, 146, 146);
+        }
+
+                            /*Attribute selector with pictures*/
+                    
+        [src^="beauty"]{
+            border: 4px dotted black; 
+        }
+
+                             /*Attribute selector with span inline element*/
+
+        div span:nth-child(-n+3){
+            color: gold;
+            font-size: 22px;
+        }
+
+        span::after{
+            content: ",";
+            color: black;
+        }
+        .lastspan{
+            color: blue;
+        }
+
+                             /*6 Use not selector to make exceptions*/
+
+        .container label:not(.lastone){
+            text-decoration: line-through;
+        }
+
+                                        /*7 nth-child*/
+
+        .container1 label:not(.one):nth-child(n+2){
+            font-weight: bold;
+        }
+        #reset{
+            margin: 1px 30px;
+            padding: 3px 3px;
+            width: 80px;
+            height: 30px;
+        }
+
+        /*8 Combinators and pseudoclasses*/
+
+        .container2{
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .container2 label{
+            margin-left: 20px;
+        }
+        .container2 [type="text"]{
+            width: 150px;
+        }
+        p{
+            margin-left: 450px;
+            color: red;
+        }
+
+        .container2 input:active{
+            background: pink;
+        }
+        .container2 .green:active{
+            background: lightgreen;
+        }
+
+        .container2 .silver:active{
+            background: silver;
+        }
+
+                                    /*9 Pseudo classes-selectors*/
+
+        .container4 p:first-child{
+            background: silver;
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            margin: 0;
+        }
+
+        .container4 p:nth-child(2){
+            background: orangered;
+            color: white;
+            font-weight: bold;
+            padding: 10px 10px;
+            margin: 0;
+        }
+
+        .container4 p:last-child{
+            background: silver;
+            border: 2px solid red;
+            padding: 10px 10px;
+            width: 120px;
+            margin: 10px 0;
+        }
+                                 /*10 Pseudo classes $ combinators*/
+
+        .container5{
+            width: 650px;
+            height: 300px;
+            border: 1px solid blue;
+            display: flex;
+        }
+        .boite1{
+            width: 230px;
+            height: 250px;
+            border: none;
+            font-size: 23px;
+        }
+
+        .boite2{
+            width: 230px;
+            height: 250px;
+            border: none;
+            font-size: 23px;
+        }
+
+        .boite1 li:nth-child(2){
+            color: red;
+        }
+        .boite1 li:nth-child(3){
+            color: green;
+        }
+        .boite1 li:nth-child(6){
+            color: blue;
+        }
+        .boite1 li:nth-child(7){
+            color: khaki;
+        }
+
+        .boite2 li:first-child{
+            color: palevioletred;
+        }
+        .boite2 li:nth-child(4){
+            text-decoration: line-through;
+            color: orange;
+            font-weight: bold;
+        }
+
+        .boite2 li:nth-child(6){
+            color: brown;
+            font-weight: bold;
+        }
+
+        .boite2 li:nth-last-child(2){
+            color: silver;
+        }                        
+
+                            /*11 pseudo-classes/combinators*/
+
+        .container6{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+            display: grid-column;
+        }
+
+        .sub{
+            width: 250px;
+            height: 210px;
+            margin-left: 730px;
+            font-size: 20px;
+            padding: 20px 10px;
+            border: none;
+        }
+        .sub1{
+            width: 250px;
+            height: 125px;
+            margin-left: 730px;
+            font-size: 20px;
+            padding: 20px 10px;
+            border: none;
+        }
+
+        .container6 .sub::first-line{
+            color: red;
+        }
+        .container6 .sub::first-letter{
+            color: blue;
+            font-size: 50px;
+        }
+
+        .container6 .sub::selection{
+            background: orange;
+        }
+
+        .sub1 mark{
+            background-color: grey !important;
+        }
+                    /*how to make a space at the first 3 lines?*/
+
+                    /*14 Attribute element*/
+
+        #target{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        #target div{
+            border: none;
+        }
+        #target p{
+            margin: 0;
+            color: black;
+        }
+        
+        #target p:first-of-type{
+            color: orange;
+        }
+
+        #target p::first-letter{
+            font-size: 22px;
+            color: green;
+        }
+
+        #target p:nth-child(2){
+            color: red;
+        }
+        #target p:nth-child(3){
+            color: blue;
+        }
+        
+        </style>
+    </head>
+    <body>
+
+
+
+                                 <!--1 combinator selector-->
+
+        <h1>1 Combinator selector</h1>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Temperature</th>
+            </tr>
+            <tr>
+                 <td>London</td>
+                 <td>21°C</td>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>16°C</td>
+            </tr>
+            <tr>
+                <td>Rome</td>
+                <td>23°C</td>
+            </tr>
+            <tr>
+                <td>Berlin</td>
+                <td>14°C</td>
+            </tr>
+            <tr>
+                <td>Sydney</td>
+                <td>25°C</td>
+            </tr>
+            <tr>
+                <td>Rejkjavic</td>
+                <td>10°C</td>
+            </tr>
+        </table>
+
+        <hr>
+        <!--2 Attribute selectors-->
+
+        <h1>2 Attribute selectors</h1>
+        <div class="box">
+            <input type="checkbox"> <label id="ashu">Apple</label> <br>
+            <input type="checkbox"> <label id="red">Orange</label><br>
+            <input type="checkbox"> <label id="ashu">Pear</label> <br>
+            <input type="checkbox"> <label id="ashu">Grape</label><br>
+            <input type="radio">  <label>Plum</label><br>
+            <input type="radio">  <label>Pineapple</label><br>
+            <input type="radio">  <label>Mango</label><br>
+            <input type="text">  <label>Enter Fruit</label>
+        </div>
+
+        <hr>
+                                 <!--3 Attribute selectors-->
+<h1>3 Attribute Selectors </h1>
+<div>
+<a href="">This is a link with no target Attribute.</a> <br>
+<a href="" class="xx">This is a link with a specific target Attribute.</a><br>
+<a href="" target="">This is a link with an empty target Attribute.</a><br>
+<a href="" target="_blank">This is a link with a fluffy Attribute.</a>
+</div>
+
+<hr>
+<!--4 Attribute selectors-->
+<h1>4 Attribute selector with pictures </h1>
+
+<img src="nature.jpg" width="150" height="150">
+<img src="bird.jpg" width="200" height="200">
+<img src="beauty-nature.jpg" width="250" height="250">
+
+<br>
+<hr>
+<!--5 Attribute selector, case sensitive-->
+
+<h1>5 Attribute selector, inline element with span</h1>
+
+<div> 
+<span>oak</span>
+<span>cedar</span>
+<span>ash</span>
+<span>maple</span>
+<span class="lastspan">beech</span>
+</div> 
+
+<hr>
+
+<h1>6 use not.</h1>
+
+<div class="container">
+
+<input type="checkbox"><label>Eat breakfast</label><br>
+<input type="checkbox" ><label class="lastone">clean car</label><br>
+<input type="checkbox"><label>Grocery shopping</label><br>
+<input type="checkbox"><label>Play games</label><br>
+<input type="checkbox"><label>Take a nap</label><br>
+<input type="checkbox"><label class="lastone">Do some work</label>
+
+</div>
+<hr>
+<h1>7 nth-child</h1>
+<div class="container1">
+<input type="checkbox"> <label class="one">Eat breakfast</label><br>
+<input type="checkbox"> <label class="one">Clean car</label><br>
+<input type="checkbox"> <label>Grocery Shopping(default)</label><br>
+<input type="checkbox"> <label>Play games(default)</label><br>
+<input type="checkbox"> <label>Take a nap(default)</label><br>
+<input type="checkbox"> <label class="one">Do some work</label><br>
+<input type="submit" value="Reset" id="reset">
+</div>
+<hr>
+                     <!--combinators and pseudo classes-->
+
+    <h1>8 Combinator /pseudoclasses/</h1>
+
+<div class="container2">
+    <label>Enter work email*</label><input type="text"><br>
+    <label>Enter personal email</label><input type="text" class="green"><br>
+    <label>Favorite website?</label><input type="text" class="silver">
+</div>
+<p>form has errors</p>
+
+<hr>
+                            <!--9 Pseudo classes-combinators-->
+
+ <hr>
+
+<h1>9 Pseudo classes-combinators</h1>
+
+<div class="container4">
+<p>Just a standard text which is read only.</p>
+<p>However you can edit this content! Go ahead and click me to change the text.</p>
+<p>Placeholder text...</p>
+
+</div>
+
+                    <!--Pseudo classes $ combinators-->
+<hr>
+     <h1>10 Pseudo classes $ combinators</h1>
+     <div class="container5">
+         <div class="boite1">
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Soap</li>
+        <li>Tomatoes</li>
+        <li>Pasta</li>
+        <li>Washing Powder</li>
+        <li>Salt</li>
+        <li>Baked Beans</li>
+    </ul>
+    </div>
+        <div class="boite2">
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Soap</li>
+        <li>Tomatoes</li>
+        <li>Pasta</li>
+        <li>Washing Powder</li>
+        <li>Salt(2nd from end)</li>
+        <li>Baked Beans</li>
+    </ul>
+    </div>
+</div>
+
+<hr>
+
+                        <!--Pseudo-classes/combinators-->
+
+<h1>11 Pseudo-classes/combinators</h1>
+
+<div class="container6">
+    <div class="sub">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque 
+        possimus cupiditate pariatur suscipit officiis? Laborum architecto 
+        temporibus quaerat tenetur quas 
+        excepturi repudiandae, molestias,
+         
+    </div>
+        
+    <div class="sub1">
+        <mark>
+        ducimus harum eos at beatae tempore reprehenderit eius pariatur 
+        corrupti explicabo! 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus 
+        </mark>
+</div>
+</div>
+<hr>
+                            <!--attribute elements-->
+
+<h1>14 Attribute element</h1>
+
+ 
+<div id="target">
+
+    <p>Alright, let's mafia things up a bit. Joey, burn down the ship. 
+        Clamps, burn down the crew. No! Don't jump! Dr. Zoidberg, 
+        that doesn't make sense.
+    </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <h2>Where the Buggalo Roam</h2>
+
+         <div>   
+            <p>Does anybody else feel jealous and aroused and worried?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+
+ 
+        
+    <article>
+
+        <p>But, okay! I just want to talk. It has nothing to do with mating. 
+            Fry, that doesn't make sense.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic!</p>
+
+    </article>
+    <article> 
+
+        <p>Now, now. Perfectly symmetrical violence never solved anything.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dicta.</p>
+
+    </article>
+</div>
+        
+    </body>
+</html>
